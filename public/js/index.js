@@ -17,7 +17,7 @@ async function getRandomPhoto() {
     const recievedPhoto = data.urls.regular
 
     const imgDiv = document.querySelector(".back-img")
-    imgDiv.style.backgroundImage = `url($(recievedPhoto))`
+    imgDiv.style.backgroundImage = `url(${recievedPhoto})`
   } catch (error) {
     console.log(error)
   }
